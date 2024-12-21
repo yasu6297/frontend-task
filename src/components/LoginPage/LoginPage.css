@@ -1,0 +1,271 @@
+/* Add the updated CSS for the given design here */
+
+.login-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    background-color: #f7f7f7;
+  }
+  
+  .illustration-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .illustration-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .form-wrapper {
+    width: 50%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+.social-login{
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    .google-login{
+        background-color: #f7f7f7;
+        color:black;
+        font-size: small;
+    }
+    .facebook-login{
+        background-color: #f7f7f7;
+        color:black;
+        font-size: small;
+        
+    }
+   
+}
+.purple{
+    color: #6113fc;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.or-text{
+    padding: 0%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+.GOOGLE,.FACEBOOK{
+    margin-left: 2%;
+    vertical-align:10px;
+    
+
+}
+.form-group{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+}
+.form-label{
+    font-size: 10px;
+    margin-left: 60px;
+    vertical-align: sub;
+}
+.form-input{
+    font-weight: bold;
+    border: none;
+    vertical-align:13px;
+    background-color: whitesmoke;
+    font-size: 16px; /* Ensure text and caret alignment */
+  /* Proper spacing inside input */
+  line-height: 1.5; /* Line height for text consistency */
+  border: none;
+ 
+  outline: none;
+   
+}
+::placeholder{
+    color:black;
+}
+.image{
+    max-width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  transform:scale(0.8);
+  margin-bottom: 10px;
+}
+.form-options{
+    display:flex;
+    align-items: center;
+    margin-left: 3px;
+    width: 50%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    .remember-me{
+      
+        white-space:nowrap;
+        font-size: small;
+
+    }
+    .forgot-password{
+        background-color:white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:#6113fc;
+        margin-left: 80%;
+        white-space:nowrap;
+
+    
+    }
+}
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  .toggle-password-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+ 
+  }
+  
+.login-button{
+    width:100%;
+    background-color:#6113fc;
+    height: 45px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.register-text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+    color:black;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.register-link{
+     background-color:white;
+     color:#6113fc ;
+     padding: 0%;
+     font-size: 15px;
+}
+/* Base styles remain unchanged for larger screens */
+
+/* Media Query for Tablets (768px and smaller) */
+@media (max-width: 768px) {
+    .login-container {
+      flex-direction: column; /* Stack illustration and form vertically */
+      padding: 20px;
+    }
+  
+    .illustration-wrapper {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .illustration-image {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  
+    .form-wrapper {
+      width: 100%;
+      padding: 20px;
+      box-shadow: none; /* Simplify the design for smaller screens */
+    }
+  
+    .social-login button {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .separator {
+      margin: 15px 0;
+    }
+  
+    .form-group {
+      margin-bottom: 15px;
+    }
+  
+    .form-input {
+      font-size: 0.9rem;
+    }
+  
+    .login-button {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
+  
+  /* Media Query for Mobile Devices (480px and smaller) */
+  @media (max-width: 480px) {
+    .login-container {
+      padding: 10px;
+    }
+  
+    .illustration-image {
+      max-width: 100%; /* Full width for smaller screens */
+    }
+  
+    .form-wrapper {
+      padding: 10px;
+    }
+  
+    .social-login button {
+      font-size: 0.8rem;
+    }
+  
+    .form-input {
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+  
+    .login-button {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .register-text {
+      font-size: 0.8rem;
+    }
+  }
+  /* Default (for larger screens) */
+.or-text {
+    padding: 0%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  /* Media Query for Tablets (768px and smaller) */
+  @media (max-width: 768px) {
+    .or-text {
+      margin-top: 3%;
+      margin-bottom: 3%;
+      font-size: 0.9rem; /* Reduce font size for smaller screens */
+    }
+  }
+  
+  /* Media Query for Mobile Devices (480px and smaller) */
+  @media (max-width: 480px) {
+    .or-text {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      font-size: 0.8rem; /* Further reduce font size */
+      text-align: center; /* Ensure alignment for smaller screens */
+    }
+  }
+  
